@@ -25,7 +25,7 @@ $menu = $menu["menu"];
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">All Menu</a>
             </div>
         </div>
     </div>
@@ -51,12 +51,9 @@ $menu = $menu["menu"];
                         <a href="#" class="btn btn-primary">Pesan Sekarang</a>
                     </div>
                 </div>
-            </div>
+            </div> 
             <?php endforeach; ?>
-        </div>
-                                        
-
-
+        </div>v
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
