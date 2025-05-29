@@ -6,6 +6,6 @@ $mahasiswa = [
     "angkatan" => 2020
 ];
 
-var_dump($mahasiswa);
-
+$data = json_encode($mahasiswa);
+echo $data;
 ?>
