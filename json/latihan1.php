@@ -1,11 +1,18 @@
 <?php
-$mahasiswa = [  
-    "nama" => "Budi",
-    "nim" => "1234567890",
-    "jurusan" => "Teknik Informatika",
-    "angkatan" => 2020
-];
+// $mahasiswa = [  
+//     "nama" => "Budi",
+//     "nim" => "1234567890",
+//     "jurusan" => "Teknik Informatika",
+//     "angkatan" => 2020
+// ];
 
-$data = json_encode($mahasiswa);
+
+
+$dbh = new PDO("mysql:host=localhost;dbname=sikepo_db", "root", "");
+$db = $dbh->prepare("SELECT * FROM kehadiran");
+$db->execute();
+$kehadiran = $db->fetchAll(PDO::FETCH_ASSOC);
+
+$data = json_encode($kehadiran);
 echo $data;
 ?>
