@@ -9,8 +9,13 @@ $('#search-button').on('click', function() {
                 s: $('#search-input').val()
             },
             success: function(result) {
-                    console.log(result);    
+                if (result.Response === "True") {
+
+                } else {
+                    $('#movie-list').html('<h1 class="text-center">Movie Bot Found!</h1>');
+                }
+
+
             }
-            
         });
 });
