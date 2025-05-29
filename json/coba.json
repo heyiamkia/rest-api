@@ -1,15 +1,31 @@
-{
-    "nama" : "tazkia", 
-    "umur" : 22,
-    "lulus" : false,
-    "hobby" : [
-        "nyanyi",
-        "baking",
-        "cycling"
-    ],
-    "alamat" : {
-        "jalan" : "Jl. Abdurrahim Lubis",
-        "kota" : "Tebing Tinggi",
-        "provinsi" : "sumatera utara"
+[    
+    {
+        "nama" : "tazkia", 
+        "umur" : 22,
+        "lulus" : false,
+        "hobby" : [
+            "nyanyi",
+            "baking",
+            "cycling"
+        ],
+        "alamat" : {
+            "jalan" : "Jl. Abdurrahim Lubis",
+            "kota" : "Tebing Tinggi",
+            "provinsi" : "sumatera utara"
+        }
+    },
+    {
+        "nama" : "budi", 
+        "umur" : 25,
+        "lulus" : true,
+        "hobby" : [
+            "membaca",
+            "bersepeda"
+        ],
+        "alamat" : {
+            "jalan" : "Jl. Merdeka",
+            "kota" : "Medan",
+            "provinsi" : "sumatera utara"
+        }
     }
-}
+]
