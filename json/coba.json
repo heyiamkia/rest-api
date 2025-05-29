@@ -1,0 +1,15 @@
+{
+    "nama" : "tazkia", 
+    "umur" : 22,
+    "lulus" : false,
+    "hobby" : [
+        "nyanyi",
+        "baking",
+        "cycling"
+    ],
+    "alamat" : {
+        "jalan" : "Jl. Abdurrahim Lubis",
+        "kota" : "Tebing Tinggi",
+        "provinsi" : "sumatera utara"
+    }
+}
