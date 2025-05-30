@@ -1,3 +1,17 @@
+<?php
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, "https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCOmHUn--16B90oW2L6FRR3A&key=AIzaSyCGH7k8h_syEjsaA_OtWVSdvw6bpjcBYVU");
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$result = curl_exec($curl);
+curl_close($curl);
+
+$result = json_decode($result, true);
+
+$youtubeProfilePicture = $result['items'][0]['snippet']['thumbnails']['medium']['url'];
+$channelName= $result['items'][0]['snippet']['title'];
+$subscriber= $result['items'][0]['statistics']['subscriberCount'];
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -81,11 +95,11 @@
           <div class="col-md-5">
             <div class="row">
               <div class="col-md-4">
-                <img src="img/profile1.png" widht="200" class="rounded-circle img-thumbnail">
+                <img src="<?= $youtubeProfilePicture ?>" widht="200" class="rounded-circle img-thumbnail">
               </div>
               <div class="col-md-8">
-                <h5> WebProgrammingUNPAS</h5>
-                <p>70000 Subscribers</p>
+                <h5><?= $channelName ?></h5>
+                <p><?= $subscriber ?> Subscribers</p>
               </div>
             </div>
             <div class="row mt-3 pb-3">
